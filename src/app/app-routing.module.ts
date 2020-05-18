@@ -8,7 +8,7 @@ import {CheckoutComponent} from "./components/checkout/checkout.component";
 import {ProductComponent} from "./components/product/product.component";
 import {ThankyouComponent} from "./components/thankyou/thankyou.component";
 import {InfoComponent} from "./components/info/info.component"
-
+import {QuizComponent} from "./components/quiz/quiz.component"
 const routes: Routes = [
   {
     path: '', component: HomeComponent
@@ -33,7 +33,11 @@ const routes: Routes = [
   },
   {
   path:'info', component:InfoComponent
+  },
+  {
+    path:'quiz', component:QuizComponent
   }
+
 ];
 
 @NgModule({

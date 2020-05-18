@@ -18,6 +18,7 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-b
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ToastrModule} from 'ngx-toastr';
 import { InfoComponent } from './components/info/info.component';
+import { QuizComponent } from './components/quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { InfoComponent } from './components/info/info.component';
     CheckoutComponent,
     ProductComponent,
     ThankyouComponent,
-    InfoComponent
+    InfoComponent,
+    QuizComponent
     
   ],
   imports: [
