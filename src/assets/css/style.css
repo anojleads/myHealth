@@ -411,12 +411,12 @@ textarea.input {
 \*----------------------------*/
 
 #top-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 25px;
   background-color: #1E1F29;
 }
 
-.header-links li {
+.header-links li {  
   display: inline-block;
   margin-right: 15px;
   font-size: 12px;
@@ -431,7 +431,7 @@ textarea.input {
 }
 
 .header-links li a:hover {
-  color: #D10024;
+  color: rgb(51, 223, 88);
 }
 
 .header-links li i {
@@ -446,7 +446,7 @@ textarea.input {
 #header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #15161D;
+  background-color: rgba(11, 49, 24, 0.719)
 }
 
 .header-logo {
@@ -470,7 +470,7 @@ textarea.input {
 }
 
 .header-search form .input-select {
-  margin-right: -4px;
+  margin-right: -5px;
   border-radius: 40px 0px 0px 40px;
 }
 
@@ -482,11 +482,13 @@ textarea.input {
 .header-search form .search-btn {
   height: 40px;
   width: 100px;
-  background: #D10024;
+  background: rgb(46, 155, 109);
   color: #FFF;
   font-weight: 700;
   border: none;
   border-radius: 0px 40px 40px 0px;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 
 /*----------------------------*\
@@ -672,7 +674,7 @@ textarea.input {
     position: fixed;
     left: 0;
     top: 0;
-    background: #15161D;
+    background: rgb(57, 168, 126);
     height: 100vh;
     max-width: 250px;
     width: 0%;
@@ -725,7 +727,7 @@ textarea.input {
   bottom: 0;
   left: 0px;
   width: 60%;
-  background: #D10024;
+  background: rgb(17, 148, 87);
   opacity: 0.9;
   -webkit-transform: skewX(-45deg);
   -ms-transform: skewX(-45deg);
@@ -739,7 +741,7 @@ textarea.input {
   bottom: 0;
   left: 1px;
   width: 100%;
-  background: #D10024;
+  background: rgb(44, 107, 76);
   opacity: 0.9;
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);
