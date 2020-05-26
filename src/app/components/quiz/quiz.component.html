@@ -2,12 +2,24 @@
 <title>multiple-choice quiz form</title>
 
 
-<h3>Vocabulary Quiz I</h3>
 
-<img src="./../../../assets/img/soon.jpg" alt="health" width="510" height="500">
-
+<div class="container">
+    <h2>Order the Advices </h2>
+    <div cdkDropList #advicesList="cdkDropList" [cdkDropListData]="AdvicesList"
+      [cdkDropListConnectedTo]="[doneAdviceList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">
+      <div class="advice-block" *ngFor="let advice of AdvicesList" cdkDrag>{{advice}}</div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2>Drag your Best Advices from the list </h2>
+    <div cdkDropList #doneAdviceList="cdkDropList" [cdkDropListData]="BestAdvices"
+      [cdkDropListConnectedTo]="[advicesList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">
+      <div class="advice-block" *ngFor="let advice of BestAdvices" cdkDrag>{{advice}}</div>
+    </div>
+  </div>
 
 <form method="post" action="mailto:raizen@mail.utexas.edu?subject=Vocabulary Quiz 1" enctype="text/plain">
 
-Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
+
 

@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -19,6 +19,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ToastrModule} from 'ngx-toastr';
 import { InfoComponent } from './components/info/info.component';
 import { QuizComponent } from './components/quiz/quiz.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -45,11 +46,14 @@ import { QuizComponent } from './components/quiz/quiz.component';
     NgxSpinnerModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    DragDropModule
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppModule {
 }
