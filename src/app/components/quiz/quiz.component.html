@@ -1,10 +1,10 @@
 
-<title>multiple-choice quiz form</title>
+<title>Drag and drop</title>
 
 
 
 <div class="container">
-    <h2>Order the Advices </h2>
+    <h2>Advices List </h2>
     <div cdkDropList #advicesList="cdkDropList" [cdkDropListData]="AdvicesList"
       [cdkDropListConnectedTo]="[doneAdviceList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">
       <div class="advice-block" *ngFor="let advice of AdvicesList" cdkDrag>{{advice}}</div>

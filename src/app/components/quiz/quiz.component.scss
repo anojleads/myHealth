@@ -9,28 +9,31 @@
 	margin: 0 25px 25px 0;
 	display: inline-block;
 	vertical-align: top;
+	background-color: darkseagreen;
+	
 }
 .advice-list {
 	width: 80%;
 	border: solid 1px #ccc;
 	min-height: 60px;
 	display: inline-block;
-	background: white;
+	background:rgb(100, 136, 130);
 	border-radius: 4px;
 	overflow: hidden;
 	margin-top: 25px;
+
 }
 .advice-block {
 	padding: 20px 10px;
 	border-bottom: solid 1px #ccc;
-	color: rgba(0, 0, 0, 0.87);
+	color: whitesmoke (0, 0, 0, 0.87);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
 	cursor: move;
-	background: white;
+	background: darkgray;
 	font-size: 14px;
 	&:last-child {
 		border: none;
@@ -54,3 +57,5 @@
 		}
 	}
 }
+
+
