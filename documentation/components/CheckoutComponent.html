@@ -1,0 +1,826 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-health documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">my-health documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CheckoutComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/checkout/checkout.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>mg-checkout</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./checkout.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./checkout.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cartData">cartData</a>
+                            </li>
+                            <li>
+                                <a href="#cartTotal">cartTotal</a>
+                            </li>
+                            <li>
+                                <a href="#checkoutForm">checkoutForm</a>
+                            </li>
+                            <li>
+                                <a href="#showSpinner">showSpinner</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onCheckout">onCheckout</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cartService: <a href="../injectables/CartService.html">CartService</a>, orderService: <a href="../injectables/OrderService.html">OrderService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, spinner: NgxSpinnerService, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/checkout/checkout.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cartService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CartService.html" target="_self" >CartService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>orderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OrderService.html" target="_self" >OrderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>spinner</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgxSpinnerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/components/checkout/checkout.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCheckout"></a>
+                    <span class="name">
+                        <b>
+                            onCheckout
+                        </b>
+                        <a href="#onCheckout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCheckout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/components/checkout/checkout.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cartData"></a>
+                        <span class="name">
+                            <b>
+                            cartData</b>
+                            <a href="#cartData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/CartModelServer.html" target="_self" >CartModelServer</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/checkout/checkout.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cartTotal"></a>
+                        <span class="name">
+                            <b>
+                            cartTotal</b>
+                            <a href="#cartTotal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/checkout/checkout.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkoutForm"></a>
+                        <span class="name">
+                            <b>
+                            checkoutForm</b>
+                            <a href="#checkoutForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/checkout/checkout.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showSpinner"></a>
+                        <span class="name">
+                            <b>
+                            showSpinner</b>
+                            <a href="#showSpinner"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/checkout/checkout.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {CartService} from &quot;../../services/cart.service&quot;;
+import {CartModelServer} from &quot;../../models/cart.model&quot;;
+import {Router} from &quot;@angular/router&quot;;
+import {OrderService} from &quot;../../services/order.service&quot;;
+import {NgxSpinnerService} from &quot;ngx-spinner&quot;;
+import {FormBuilder, NgForm, Validators} from &quot;@angular/forms&quot;;
+
+@Component({
+  selector: &#x27;mg-checkout&#x27;,
+  templateUrl: &#x27;./checkout.component.html&#x27;,
+  styleUrls: [&#x27;./checkout.component.scss&#x27;]
+})
+export class CheckoutComponent implements OnInit {
+  cartData: CartModelServer;
+  cartTotal: Number;
+  showSpinner: Boolean;
+  checkoutForm: any;
+  constructor(private cartService: CartService,
+              private orderService: OrderService,
+              private router: Router,
+              private  spinner: NgxSpinnerService,
+              private fb: FormBuilder) {
+
+    this.checkoutForm &#x3D; this.fb.group({
+      firstname: [&#x27;&#x27;, [Validators.required]],
+      lastname: [&#x27;&#x27;, [Validators.required]],
+      email: [&#x27;&#x27;, [Validators.required, Validators.email]],
+      phone: [&#x27;&#x27;, [Validators.required]],
+
+    });
+
+
+  }
+
+  ngOnInit() {
+    this.cartService.cartDataObs$.subscribe(data &#x3D;&gt; this.cartData &#x3D; data);
+    this.cartService.cartTotal$.subscribe(total &#x3D;&gt; this.cartTotal &#x3D; total);
+
+  }
+
+  onCheckout() {
+   this.spinner.show().then(p &#x3D;&gt; {
+      this.cartService.CheckoutFromCart(1);
+    });
+
+
+  //console.log(this.checkoutForm.value);
+
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ngx-spinner
+  bdColor&#x3D; &quot;rgba(151,149,149,0.4)&quot;
+  size&#x3D;&quot;large&quot;
+  color&#x3D;&quot;orange&quot;
+  type&#x3D;&quot;ball-clip-rotate-pulse&quot;
+  fullScreen&#x3D;&quot;true&quot;
+&gt;
+  &lt;p style&#x3D;&quot;font-size: 20px; color: black&quot;&gt;Booking Order...&lt;/p&gt;
+&lt;/ngx-spinner&gt;
+
+&lt;div class&#x3D;&quot;section&quot; *ngIf&#x3D;&quot;cartData.total &gt; 0&quot;&gt;
+&lt;!-- container --&gt;
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;!-- row --&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+
+    &lt;div class&#x3D;&quot;col-md-7&quot;&gt;
+      &lt;!-- Billing Details --&gt;
+      &lt;div class&#x3D;&quot;billing-details&quot;&gt;
+        &lt;div class&#x3D;&quot;section-title&quot;&gt;
+          &lt;h3 class&#x3D;&quot;title&quot;&gt;Billing address&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;first-name&quot; placeholder&#x3D;&quot;First Name&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;last-name&quot; placeholder&#x3D;&quot;Last Name&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Email&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;address&quot; placeholder&#x3D;&quot;Address&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;city&quot; placeholder&#x3D;&quot;City&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;country&quot; placeholder&#x3D;&quot;Country&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;zip-code&quot; placeholder&#x3D;&quot;ZIP Code&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;tel&quot; name&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;Telephone&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;div class&#x3D;&quot;input-checkbox&quot;&gt;
+            &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;create-account&quot;&gt;
+            &lt;label for&#x3D;&quot;create-account&quot;&gt;
+              &lt;span&gt;&lt;/span&gt;
+              Create Account?
+            &lt;/label&gt;
+            &lt;div class&#x3D;&quot;caption&quot;&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Enter Your Password&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- /Billing Details --&gt;
+
+      &lt;!-- Shiping Details --&gt;
+      &lt;div class&#x3D;&quot;shiping-details&quot;&gt;
+        &lt;div class&#x3D;&quot;section-title&quot;&gt;
+          &lt;h3 class&#x3D;&quot;title&quot;&gt;Shiping address&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;input-checkbox&quot;&gt;
+          &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;shiping-address&quot;&gt;
+          &lt;label for&#x3D;&quot;shiping-address&quot;&gt;
+            &lt;span&gt;&lt;/span&gt;
+            Ship to a diffrent address?
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;caption&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;first-name&quot; placeholder&#x3D;&quot;First Name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;last-name&quot; placeholder&#x3D;&quot;Last Name&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Email&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;address&quot; placeholder&#x3D;&quot;Address&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;city&quot; placeholder&#x3D;&quot;City&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;country&quot; placeholder&#x3D;&quot;Country&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;zip-code&quot; placeholder&#x3D;&quot;ZIP Code&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;input class&#x3D;&quot;input&quot; type&#x3D;&quot;tel&quot; name&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;Telephone&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- /Shiping Details --&gt;
+
+      &lt;!-- Order notes --&gt;
+      &lt;div class&#x3D;&quot;order-notes&quot;&gt;
+        &lt;textarea class&#x3D;&quot;input&quot; placeholder&#x3D;&quot;Order Notes&quot;&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;!-- /Order notes --&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Order Details --&gt;
+    &lt;div class&#x3D;&quot;col-md-5 order-details&quot;&gt;
+      &lt;div class&#x3D;&quot;section-title text-center&quot;&gt;
+        &lt;h3 class&#x3D;&quot;title&quot;&gt;Your Order&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;order-summary&quot;&gt;
+        &lt;div class&#x3D;&quot;order-col&quot;&gt;
+          &lt;div&gt;&lt;strong&gt;PRODUCT&lt;/strong&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;strong&gt;SubTotal&lt;/strong&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;order-products&quot;&gt;
+          &lt;div class&#x3D;&quot;order-col&quot; *ngFor&#x3D;&quot;let c of cartData.data;&quot;&gt;
+            &lt;div&gt;{{c.numInCart}}x {{c.product.name}}&lt;/div&gt;
+            &lt;div&gt;{{(c.product.price*c.numInCart) | currency:&#x27;USD&#x27;}}&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;order-col&quot;&gt;
+          &lt;div&gt;Shipping&lt;/div&gt;
+          &lt;div&gt;&lt;strong&gt;FREE&lt;/strong&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;order-col dropdown-divider&quot;&gt;
+          &lt;div&gt;&lt;strong&gt;TOTAL&lt;/strong&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;strong class&#x3D;&quot;order-total&quot;&gt;{{cartTotal | currency:&#x27;USD&#x27;}}&lt;/strong&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;payment-method&quot;&gt;
+        &lt;div class&#x3D;&quot;input-radio&quot;&gt;
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;payment&quot; id&#x3D;&quot;payment-1&quot;&gt;
+          &lt;label for&#x3D;&quot;payment-1&quot;&gt;
+            &lt;span&gt;&lt;/span&gt;
+            Direct Bank Transfer
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;caption&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;input-radio&quot;&gt;
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;payment&quot; id&#x3D;&quot;payment-2&quot;&gt;
+          &lt;label for&#x3D;&quot;payment-2&quot;&gt;
+            &lt;span&gt;&lt;/span&gt;
+            Cheque Payment
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;caption&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;input-radio&quot;&gt;
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;payment&quot; id&#x3D;&quot;payment-3&quot;&gt;
+          &lt;label for&#x3D;&quot;payment-3&quot;&gt;
+            &lt;span&gt;&lt;/span&gt;
+            Paypal System
+          &lt;/label&gt;
+          &lt;div class&#x3D;&quot;caption&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;input-checkbox&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;terms&quot;&gt;
+        &lt;label for&#x3D;&quot;terms&quot;&gt;
+          &lt;span&gt;&lt;/span&gt;
+          I&#x27;ve read and accept the &lt;a href&#x3D;&quot;#&quot;&gt;terms &amp; conditions&lt;/a&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn-outline-danger btn-sm my-2 btn-block&quot; [disabled]&#x3D;&quot;cartTotal &lt;&#x3D; 0 &quot; (click)&#x3D;&quot;onCheckout()&quot;&gt;Place order&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;!-- /Order Details --&gt;
+  &lt;/div&gt;
+  &lt;!-- /row --&gt;
+&lt;/div&gt;
+&lt;!-- /container --&gt;
+&lt;/div&gt;
+&lt;!-- /SECTION --&gt;
+
+&lt;div class&#x3D;&quot;text-center my-5&quot; *ngIf&#x3D;&quot;cartData.total &lt;&#x3D; 0&quot;&gt;
+  &lt;h4&gt;Your Cart Is Empty&lt;/h4&gt;
+  &lt;button class&#x3D;&quot;btn btn-primary btn-lg mt-3&quot; routerLink&#x3D;&quot;/&quot;&gt;GO TO SHOP&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./checkout.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ngx-spinner  bdColor= "rgba(151,149,149,0.4)"  size="large"  color="orange"  type="ball-clip-rotate-pulse"  fullScreen="true">  <p style="font-size: 20px; color: black">Booking Order...</p></ngx-spinner><div class="section" *ngIf="cartData.total > 0"><!-- container --><div class="container">  <!-- row -->  <div class="row">    <div class="col-md-7">      <!-- Billing Details -->      <div class="billing-details">        <div class="section-title">          <h3 class="title">Billing address</h3>        </div>        <div class="form-group">          <input class="input" type="text" name="first-name" placeholder="First Name">        </div>        <div class="form-group">          <input class="input" type="text" name="last-name" placeholder="Last Name">        </div>        <div class="form-group">          <input class="input" type="email" name="email" placeholder="Email">        </div>        <div class="form-group">          <input class="input" type="text" name="address" placeholder="Address">        </div>        <div class="form-group">          <input class="input" type="text" name="city" placeholder="City">        </div>        <div class="form-group">          <input class="input" type="text" name="country" placeholder="Country">        </div>        <div class="form-group">          <input class="input" type="text" name="zip-code" placeholder="ZIP Code">        </div>        <div class="form-group">          <input class="input" type="tel" name="tel" placeholder="Telephone">        </div>        <div class="form-group">          <div class="input-checkbox">            <input type="checkbox" id="create-account">            <label for="create-account">              <span></span>              Create Account?            </label>            <div class="caption">              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>              <input class="input" type="password" name="password" placeholder="Enter Your Password">            </div>          </div>        </div>      </div>      <!-- /Billing Details -->      <!-- Shiping Details -->      <div class="shiping-details">        <div class="section-title">          <h3 class="title">Shiping address</h3>        </div>        <div class="input-checkbox">          <input type="checkbox" id="shiping-address">          <label for="shiping-address">            <span></span>            Ship to a diffrent address?          </label>          <div class="caption">            <div class="form-group">              <input class="input" type="text" name="first-name" placeholder="First Name">            </div>            <div class="form-group">              <input class="input" type="text" name="last-name" placeholder="Last Name">            </div>            <div class="form-group">              <input class="input" type="email" name="email" placeholder="Email">            </div>            <div class="form-group">              <input class="input" type="text" name="address" placeholder="Address">            </div>            <div class="form-group">              <input class="input" type="text" name="city" placeholder="City">            </div>            <div class="form-group">              <input class="input" type="text" name="country" placeholder="Country">            </div>            <div class="form-group">              <input class="input" type="text" name="zip-code" placeholder="ZIP Code">            </div>            <div class="form-group">              <input class="input" type="tel" name="tel" placeholder="Telephone">            </div>          </div>        </div>      </div>      <!-- /Shiping Details -->      <!-- Order notes -->      <div class="order-notes">        <textarea class="input" placeholder="Order Notes"></textarea>      </div>      <!-- /Order notes -->    </div>    <!-- Order Details -->    <div class="col-md-5 order-details">      <div class="section-title text-center">        <h3 class="title">Your Order</h3>      </div>      <div class="order-summary">        <div class="order-col">          <div><strong>PRODUCT</strong></div>          <div><strong>SubTotal</strong></div>        </div>        <div class="order-products">          <div class="order-col" *ngFor="let c of cartData.data;">            <div>{{c.numInCart}}x {{c.product.name}}</div>            <div>{{(c.product.price*c.numInCart) | currency:\'USD\'}}</div>          </div>        </div>        <div class="order-col">          <div>Shipping</div>          <div><strong>FREE</strong></div>        </div>        <div class="order-col dropdown-divider">          <div><strong>TOTAL</strong></div>          <div><strong class="order-total">{{cartTotal | currency:\'USD\'}}</strong></div>        </div>      </div>      <div class="payment-method">        <div class="input-radio">          <input type="radio" name="payment" id="payment-1">          <label for="payment-1">            <span></span>            Direct Bank Transfer          </label>          <div class="caption">            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          </div>        </div>        <div class="input-radio">          <input type="radio" name="payment" id="payment-2">          <label for="payment-2">            <span></span>            Cheque Payment          </label>          <div class="caption">            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          </div>        </div>        <div class="input-radio">          <input type="radio" name="payment" id="payment-3">          <label for="payment-3">            <span></span>            Paypal System          </label>          <div class="caption">            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>          </div>        </div>      </div>      <div class="input-checkbox">        <input type="checkbox" id="terms">        <label for="terms">          <span></span>          I\'ve read and accept the <a href="#">terms & conditions</a>        </label>      </div>      <button type="submit" class="btn-outline-danger btn-sm my-2 btn-block" [disabled]="cartTotal <= 0 " (click)="onCheckout()">Place order</button>    </div>    <!-- /Order Details -->  </div>  <!-- /row --></div><!-- /container --></div><!-- /SECTION --><div class="text-center my-5" *ngIf="cartData.total <= 0">  <h4>Your Cart Is Empty</h4>  <button class="btn btn-primary btn-lg mt-3" routerLink="/">GO TO SHOP</button></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'mg-root'},{'name': 'CartComponent', 'selector': 'mg-cart'},{'name': 'CheckoutComponent', 'selector': 'mg-checkout'},{'name': 'FooterComponent', 'selector': 'mg-footer'},{'name': 'HeaderComponent', 'selector': 'mg-header'},{'name': 'HomeComponent', 'selector': 'mg-home'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'mg-login'},{'name': 'ProductComponent', 'selector': 'mg-product'},{'name': 'QuizComponent', 'selector': 'app-quiz'},{'name': 'RegisterComponent', 'selector': 'mg-register'},{'name': 'ThankyouComponent', 'selector': 'mg-thankyou'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CheckoutComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CheckoutComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

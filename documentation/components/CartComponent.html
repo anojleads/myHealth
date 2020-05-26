@@ -1,0 +1,784 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>my-health documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">my-health documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CartComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/cart/cart.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>mg-cart</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cart.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cart.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cartData">cartData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cartService">cartService</a>
+                            </li>
+                            <li>
+                                <a href="#cartTotal">cartTotal</a>
+                            </li>
+                            <li>
+                                <a href="#subTotal">subTotal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ChangeQuantity">ChangeQuantity</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cartService: <a href="../injectables/CartService.html">CartService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/cart/cart.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cartService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CartService.html" target="_self" >CartService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ChangeQuantity"></a>
+                    <span class="name">
+                        <b>
+                            ChangeQuantity
+                        </b>
+                        <a href="#ChangeQuantity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ChangeQuantity(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>, increaseQuantity: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank">Boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/cart/cart.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>increaseQuantity</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/cart/cart.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cartData"></a>
+                        <span class="name">
+                            <b>
+                            cartData</b>
+                            <a href="#cartData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/CartModelServer.html" target="_self" >CartModelServer</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/cart/cart.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cartService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            cartService</b>
+                            <a href="#cartService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/CartService.html" target="_self" >CartService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/cart/cart.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cartTotal"></a>
+                        <span class="name">
+                            <b>
+                            cartTotal</b>
+                            <a href="#cartTotal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/cart/cart.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subTotal"></a>
+                        <span class="name">
+                            <b>
+                            subTotal</b>
+                            <a href="#subTotal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/cart/cart.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {CartService} from &quot;../../services/cart.service&quot;;
+import {Observable} from &quot;rxjs&quot;;
+import {CartModelServer} from &quot;../../models/cart.model&quot;;
+
+@Component({
+  selector: &#x27;mg-cart&#x27;,
+  templateUrl: &#x27;./cart.component.html&#x27;,
+  styleUrls: [&#x27;./cart.component.scss&#x27;]
+})
+export class CartComponent implements OnInit {
+  cartData: CartModelServer;
+  cartTotal: Number;
+  subTotal: Number;
+
+  constructor(public cartService: CartService) {
+  }
+
+  ngOnInit() {
+     this.cartService.cartDataObs$.subscribe(data &#x3D;&gt; this.cartData &#x3D; data);
+     this.cartService.cartTotal$.subscribe(total &#x3D;&gt; this.cartTotal &#x3D; total);
+  }
+
+  ChangeQuantity(id: Number, increaseQuantity: Boolean) {
+    this.cartService.UpdateCartData(id, increaseQuantity);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div *ngIf&#x3D;&quot;cartData.data[0].numInCart &#x3D;&#x3D;&#x3D; 0;&quot; class&#x3D;&quot;text-center my-5&quot;&gt;
+    &lt;h4&gt;Your Cart Is Empty&lt;/h4&gt;
+    &lt;button class&#x3D;&quot;btn btn-primary btn-lg mt-3&quot; routerLink&#x3D;&quot;/&quot;&gt;GO TO SHOP&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;ng-container *ngIf&#x3D;&quot;cartData.data[0].numInCart !&#x3D;&#x3D; 0&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col my-4&quot;&gt;
+        &lt;table class&#x3D;&quot;table&quot;&gt;
+          &lt;thead class&#x3D;&quot;table-dark&quot;&gt;
+          &lt;tr class&#x3D;&quot;text-center&quot;&gt;
+            &lt;th&gt;Image&lt;/th&gt;
+            &lt;th&gt;Title&lt;/th&gt;
+            &lt;th&gt;Price&lt;/th&gt;
+            &lt;th&gt;Quantity&lt;/th&gt;
+            &lt;th&gt;Subtotal&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+          &lt;tr *ngFor&#x3D;&quot;let c of cartData.data; let i&#x3D;index&quot;&gt;
+            &lt;td class&#x3D;&quot;d-flex align-items-center justify-content-around&quot; &gt;
+              &lt;img [src]&#x3D;&quot;c.product.image&quot; alt&#x3D;&quot;{{c.product.name}}&quot; height&#x3D;&quot;60&quot; class&#x3D;&quot;order-1&quot;&gt;
+              &lt;span class&#x3D;&quot;text-danger&quot; style&#x3D;&quot;cursor: pointer;&quot;&gt;&lt;i class&#x3D;&quot;fa fa-trash&quot; (click)&#x3D;&quot;cartService.DeleteProductFromCart(i)&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;/td&gt;
+            &lt;td&gt;&lt;p&gt;{{c.product.name}}&lt;/p&gt;&lt;/td&gt;
+            &lt;td&gt;
+              &lt;p&gt;{{c.product.price | currency:&#x27;USD&#x27;}}&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;form&gt;
+                &lt;div class&#x3D;&quot;value-button&quot; id&#x3D;&quot;decrease&quot; (click)&#x3D;&quot;ChangeQuantity(i, false)&quot;&gt;
+                  &lt;i class&#x3D;&quot;fa fa-minus&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;input type&#x3D;&quot;number&quot; id&#x3D;&quot;number&quot; [value]&#x3D;&quot;c.numInCart&quot; readonly [max]&#x3D;&quot;c.product.quantity&quot; /&gt;
+                &lt;div class&#x3D;&quot;value-button&quot; id&#x3D;&quot;increase&quot; (click)&#x3D;&quot;ChangeQuantity(i, true)&quot;&gt;
+                  &lt;i class&#x3D;&quot;fa fa-plus&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;p&gt;{{cartService.CalculateSubTotal(i) | currency:&#x27;USD&#x27;}}&lt;/p&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class&#x3D;&quot;border-0&quot;&gt;
+            &lt;td style&#x3D;&quot;border: none;&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;TOTAL&lt;/td&gt;
+            &lt;td&gt;{{cartTotal | currency:&#x27;USD&#x27;}}&lt;/td&gt;
+
+          &lt;/tr&gt;
+
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-12 d-flex mb-5&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex w-100 justify-content-between flex-sm-column flex-md-row&quot;&gt;
+          &lt;a routerLink&#x3D;&quot;/checkout&quot; class&#x3D;&quot;btn btn-danger btn-sm order-1&quot;&gt;Checkout&lt;/a&gt;
+          &lt;a routerLink&#x3D;&quot;/&quot; class&#x3D;&quot;btn btn-success btn-sm order-0&quot;&gt;Continue Shopping&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/ng-container&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cart.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.increase_quantity, .decrease_quantity {
+  cursor: pointer;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  padding: 10px 0 12px;
+  text-align: center;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+  background: red;
+  color: white;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+  background: green;
+  color: white;
+}
+
+/* form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+} */
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type&#x3D;number]::-webkit-inner-spin-button,
+input[type&#x3D;number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+tbody {
+  tr {
+    &amp;:not(:last-of-type) {
+      td {
+        border-right: 1px solid #dee2e6;
+
+        &amp;:first-of-type {
+          border-left: 1px solid #dee2e6;
+        }
+      }
+    }
+
+    &amp;:last-of-type {
+      td {
+
+        &amp;:first-child {
+          border-top: 1px solid #dee2e6 !important;
+        }
+
+        &amp;:nth-child(4), &amp;:nth-child(5) {
+          border-left: 1px solid #dee2e6;
+          border-right: 1px solid #dee2e6;
+          border-bottom: 1px solid #dee2e6;
+          font-weight: bold;
+          font-size: 1.3rem;
+          text-align: center;
+        }
+
+
+      }
+
+    }
+
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <div *ngIf="cartData.data[0].numInCart === 0;" class="text-center my-5">    <h4>Your Cart Is Empty</h4>    <button class="btn btn-primary btn-lg mt-3" routerLink="/">GO TO SHOP</button>  </div>  <ng-container *ngIf="cartData.data[0].numInCart !== 0">    <div class="row">      <div class="col my-4">        <table class="table">          <thead class="table-dark">          <tr class="text-center">            <th>Image</th>            <th>Title</th>            <th>Price</th>            <th>Quantity</th>            <th>Subtotal</th>          </tr>          </thead>          <tbody>          <tr *ngFor="let c of cartData.data; let i=index">            <td class="d-flex align-items-center justify-content-around" >              <img [src]="c.product.image" alt="{{c.product.name}}" height="60" class="order-1">              <span class="text-danger" style="cursor: pointer;"><i class="fa fa-trash" (click)="cartService.DeleteProductFromCart(i)"></i></span>            </td>            <td><p>{{c.product.name}}</p></td>            <td>              <p>{{c.product.price | currency:\'USD\'}}</p>            </td>            <td>              <form>                <div class="value-button" id="decrease" (click)="ChangeQuantity(i, false)">                  <i class="fa fa-minus"></i>                </div>                <input type="number" id="number" [value]="c.numInCart" readonly [max]="c.product.quantity" />                <div class="value-button" id="increase" (click)="ChangeQuantity(i, true)">                  <i class="fa fa-plus"></i>                </div>              </form>            </td>            <td>              <p>{{cartService.CalculateSubTotal(i) | currency:\'USD\'}}</p>            </td>          </tr>          <tr class="border-0">            <td style="border: none;"></td>            <td></td>            <td></td>            <td>TOTAL</td>            <td>{{cartTotal | currency:\'USD\'}}</td>          </tr>          </tbody>        </table>      </div>      <div class="col-md-12 d-flex mb-5">        <div class="d-flex w-100 justify-content-between flex-sm-column flex-md-row">          <a routerLink="/checkout" class="btn btn-danger btn-sm order-1">Checkout</a>          <a routerLink="/" class="btn btn-success btn-sm order-0">Continue Shopping</a>        </div>      </div>    </div>  </ng-container></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'mg-root'},{'name': 'CartComponent', 'selector': 'mg-cart'},{'name': 'CheckoutComponent', 'selector': 'mg-checkout'},{'name': 'FooterComponent', 'selector': 'mg-footer'},{'name': 'HeaderComponent', 'selector': 'mg-header'},{'name': 'HomeComponent', 'selector': 'mg-home'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'mg-login'},{'name': 'ProductComponent', 'selector': 'mg-product'},{'name': 'QuizComponent', 'selector': 'app-quiz'},{'name': 'RegisterComponent', 'selector': 'mg-register'},{'name': 'ThankyouComponent', 'selector': 'mg-thankyou'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CartComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CartComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
