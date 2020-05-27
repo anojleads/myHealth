@@ -363,12 +363,12 @@ export class QuizComponent {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">
-&lt;title&gt;multiple-choice quiz form&lt;/title&gt;
+&lt;title&gt;Drag and drop&lt;/title&gt;
 
 
 
 &lt;div class&#x3D;&quot;container&quot;&gt;
-    &lt;h2&gt;Order the Advices &lt;/h2&gt;
+    &lt;h2&gt;Advices List &lt;/h2&gt;
     &lt;div cdkDropList #advicesList&#x3D;&quot;cdkDropList&quot; [cdkDropListData]&#x3D;&quot;AdvicesList&quot;
       [cdkDropListConnectedTo]&#x3D;&quot;[doneAdviceList]&quot; class&#x3D;&quot;advice-list&quot; (cdkDropListDropped)&#x3D;&quot;onDrop($event)&quot;&gt;
       &lt;div class&#x3D;&quot;advice-block&quot; *ngFor&#x3D;&quot;let advice of AdvicesList&quot; cdkDrag&gt;{{advice}}&lt;/div&gt;
@@ -405,28 +405,31 @@ export class QuizComponent {
 	margin: 0 25px 25px 0;
 	display: inline-block;
 	vertical-align: top;
+	background-color: darkseagreen;
+	
 }
 .advice-list {
 	width: 80%;
 	border: solid 1px #ccc;
 	min-height: 60px;
 	display: inline-block;
-	background: white;
+	background:rgb(100, 136, 130);
 	border-radius: 4px;
 	overflow: hidden;
 	margin-top: 25px;
+
 }
 .advice-block {
 	padding: 20px 10px;
 	border-bottom: solid 1px #ccc;
-	color: rgba(0, 0, 0, 0.87);
+	color: whitesmoke (0, 0, 0, 0.87);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
 	cursor: move;
-	background: white;
+	background: darkgray;
 	font-size: 14px;
 	&amp;:last-child {
 		border: none;
@@ -450,6 +453,8 @@ export class QuizComponent {
 		}
 	}
 }
+
+
 </code></pre>
     </div>
 
@@ -478,7 +483,7 @@ export class QuizComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><title>multiple-choice quiz form</title><div class="container">    <h2>Order the Advices </h2>    <div cdkDropList #advicesList="cdkDropList" [cdkDropListData]="AdvicesList"      [cdkDropListConnectedTo]="[doneAdviceList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">      <div class="advice-block" *ngFor="let advice of AdvicesList" cdkDrag>{{advice}}</div>    </div>  </div>    <div class="container">    <h2>Drag your Best Advices from the list </h2>    <div cdkDropList #doneAdviceList="cdkDropList" [cdkDropListData]="BestAdvices"      [cdkDropListConnectedTo]="[advicesList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">      <div class="advice-block" *ngFor="let advice of BestAdvices" cdkDrag>{{advice}}</div>    </div>  </div><form method="post" action="mailto:raizen@mail.utexas.edu?subject=Vocabulary Quiz 1" enctype="text/plain"></div>'
+        var COMPONENT_TEMPLATE = '<div><title>Drag and drop</title><div class="container">    <h2>Advices List </h2>    <div cdkDropList #advicesList="cdkDropList" [cdkDropListData]="AdvicesList"      [cdkDropListConnectedTo]="[doneAdviceList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">      <div class="advice-block" *ngFor="let advice of AdvicesList" cdkDrag>{{advice}}</div>    </div>  </div>    <div class="container">    <h2>Drag your Best Advices from the list </h2>    <div cdkDropList #doneAdviceList="cdkDropList" [cdkDropListData]="BestAdvices"      [cdkDropListConnectedTo]="[advicesList]" class="advice-list" (cdkDropListDropped)="onDrop($event)">      <div class="advice-block" *ngFor="let advice of BestAdvices" cdkDrag>{{advice}}</div>    </div>  </div><form method="post" action="mailto:raizen@mail.utexas.edu?subject=Vocabulary Quiz 1" enctype="text/plain"></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'mg-root'},{'name': 'CartComponent', 'selector': 'mg-cart'},{'name': 'CheckoutComponent', 'selector': 'mg-checkout'},{'name': 'FooterComponent', 'selector': 'mg-footer'},{'name': 'HeaderComponent', 'selector': 'mg-header'},{'name': 'HomeComponent', 'selector': 'mg-home'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'mg-login'},{'name': 'ProductComponent', 'selector': 'mg-product'},{'name': 'QuizComponent', 'selector': 'app-quiz'},{'name': 'RegisterComponent', 'selector': 'mg-register'},{'name': 'ThankyouComponent', 'selector': 'mg-thankyou'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'QuizComponent'};
